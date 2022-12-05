@@ -20,7 +20,7 @@ public class govXmlTest {
         //get all unknowns
         //get 2005 other
         //get 2007 _address
-        Response response = get("https://data.ct.gov/api/views/qm34-pq7e/rows.xml")
+        Response response = get("https://data.ct.gov/resource/y6p2-px98.xml")
                             .then().statusCode(200).extract().response();
 
         XmlPath xmlPath = response.xmlPath();

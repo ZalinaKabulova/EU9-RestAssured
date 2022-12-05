@@ -1,6 +1,6 @@
 package com.cydeo.day10;
 
-import com.cybertek.utilities.*;
+import com.cydeo.utilities.SpartanAuthTestBase;
 import io.restassured.http.*;
 import io.restassured.response.*;
 import org.junit.jupiter.api.*;

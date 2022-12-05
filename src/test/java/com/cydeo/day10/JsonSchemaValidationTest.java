@@ -1,6 +1,6 @@
 package com.cydeo.day10;
 
-import com.cybertek.utilities.*;
+import com.cydeo.utilities.SpartanAuthTestBase;
 import io.restassured.http.*;
 import io.restassured.module.jsv.*;
 import org.junit.jupiter.api.*;
@@ -42,7 +42,7 @@ public class JsonSchemaValidationTest extends SpartanAuthTestBase {
         .then()
                 .statusCode(200)
                 //what if you have your .json file not under resources following way -->
-                .body(JsonSchemaValidator.matchesJsonSchema(new File("src/test/java/com/cybertek/day10/allSpartansSchema.json")));
+                .body(JsonSchemaValidator.matchesJsonSchema(new File("src/test/java/com/cydeo/day10/allSpartansSchema.json")));
 
     }
 

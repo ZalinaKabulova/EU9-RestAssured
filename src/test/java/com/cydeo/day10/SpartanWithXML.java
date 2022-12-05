@@ -1,6 +1,6 @@
 package com.cydeo.day10;
 
-import com.cybertek.utilities.*;
+import com.cydeo.utilities.SpartanAuthTestBase;
 import io.restassured.http.*;
 import io.restassured.path.xml.*;
 import io.restassured.response.*;

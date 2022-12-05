@@ -15,7 +15,7 @@ public class SpartanGetRequests {
 //    Then status code must 200
 //    And response Content Type must be application/json
 //    And response body should include spartan result
-    String baseUrl = "http://44.202.119.26:8000";
+    String baseUrl = "http://3.86.103.110:8000";
     @Test
     public void test1(){
 
@@ -26,7 +26,7 @@ public class SpartanGetRequests {
         //printing status code from response object
         System.out.println("response.statusCode() = " + response.statusCode());
 
-        //priting response content type from response object
+        //printing response content type from response object
         System.out.println("response.contentType() = " + response.contentType());
 
         //print whole result body
@@ -43,7 +43,7 @@ public class SpartanGetRequests {
 
      /*
         Given accept header is application/json
-        When users sends a get request to /api/spartans/3
+        When user sends a get request to /api/spartans/3
         Then status code should be 200
         And content type should be application/json
         and json body should contain Fidole

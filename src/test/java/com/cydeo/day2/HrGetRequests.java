@@ -15,7 +15,7 @@ public class HrGetRequests {
     @BeforeAll
     public static void init(){
         //save baseurl inside this variable so that we dont need to type each http method.
-        baseURI = "http://44.202.119.26:1000/ords/hr";
+        baseURI = "http://3.86.103.110:1000/ords/hr";
     }
 
     @DisplayName("GET request to /regions")
@@ -40,9 +40,7 @@ public class HrGetRequests {
     @DisplayName("GET request to /regions/2")
     @Test
     public void test2(){
-        Response response = given().accept(ContentType.JSON)
-                            .when()
-                                    .get("/regions/2");
+        Response response = given().accept(ContentType.JSON).when().get("/regions/2");
 
         //verify status code
         assertEquals(200,response.statusCode());
